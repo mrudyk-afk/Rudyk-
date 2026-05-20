@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flexbox сторінка</title>
+    <style>
+        body { background-color: #D3D3D3;
+            margin:0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100hv;
+            text-align: center;}
+        header, footer {background-color:#8B0000;
+            height: 7vh;
+            text-align: center;
+            padding: 20px}
+        .container {display: flex;
+         justify-content: space-evenly;
+         align-items: center;
+         width: 100%;
+         height: 30%;
+         font-size: 28px;
+         padding: 20px;
+         text-align: center; } 
+        .box { background-color: #D3D3D3 ;
+            display: inline-block;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid grey;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            width: 40%;
+           }
+        ul {
+            margin: 0;
+            padding: 0;
+           }
+        ul li {
+            list-style: none;
+             }
+        a {
+           text-decoration: none;
+          }
+        nav {
+            background-color: #BD2323;
+            border-color: #FFAAAA;
+            min-height: 54px;
+        }
+        nav li {
+            float: left;
+            width: 100px;
+        }
+        nav a {
+            display: block;
+            line-height: 4em;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        nav li a:hover{
+            color: red;
+            background-color: purple;
+        }
+        form{
+           width: 500px;
+           margin: 40px auto;
+           padding: 20px;
+           background-color: white;
+           border-radius: 10px;
+           box-sizing: border-box;
+            }
+        label {
+            display: block;
+             margin-bottom: 5px;
+             margin-top: 10px;
+             font-weight: bold;
+      }
+        input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+     }
+        button{
+    padding: 10px;
+    background: green;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    }
+        button:hover {
+    background: darkgreen;
+      }
+    .message-field {
+        width: 100%;
+        height: 120px;
+        box-sizing: border-box;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding-bottom: 90px;
+    }
+    </style>
+</head>
+
+<body>
+ <header>
+        <h1>Про нас</h1>
+    </header>
+ <nav>
+    <ul>
+        <li><a href="index.html" >Головна</a></li>
+        <li><a href="about.html" >Про нас</a></li>
+        <li><a href="gallery.html">Галерея</a></li>
+        <li><a href="index.html">Контакти</a></li>
+    </ul>
+</nav>
+   <h2>Зворотній зв'язок</h2>
+   <form>
+    <label for="firstName">Ім'я:</label>
+    <input type="text" name="firstName" placeholder="Ваше ім'я:">
+
+    <label for="email">Електронна пошта:</label>
+    <input type="email" name="email" placeholder="example@gmail.com" >
+
+    <label for="text">Повідомлення:</label>
+    <input type="text" name="text" placeholder="Введіть ваше повідомлення тут... " class="message-field">
+
+    
+
+    <button type="submit">Відправити</button>
+   </form>
+    <footer>
+        <p>2026</p>
+    </footer>
+</body>
