@@ -64,6 +64,17 @@
             color: red;
             background-color: purple;
         }
+        .contact-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .info-text {
+            max-width: 600px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
         form{
            width: 500px;
            margin: 40px auto;
@@ -121,6 +132,10 @@
         <li><a href="index.html">Контакти</a></li>
     </ul>
 </nav>
+ <div class="contact-section">
+    <div class="info-text">
+        <p>Привіт! Якщо ти теж любиш читати фентезі або романи, цей блок саме для тебе. Через форму нижче ти можеш порадити мені свою улюблену книгу, поділитися відгуком про твори, які вже є на сайті, або просто залишити пораду, як покращити мою сторінку. Мені буде дуже цікаво почитати ваші повідомлення!</p>
+    </div>
    <h2>Зворотній зв'язок</h2>
    <form>
     <label for="firstName">Ім'я:</label>
@@ -137,6 +152,6 @@
     <button type="submit">Відправити</button>
    </form>
     <footer>
-        <p>2026</p>
+        <p style=" text-align: center;">2026</p>
     </footer>
 </body>
